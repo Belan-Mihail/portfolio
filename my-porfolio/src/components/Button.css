@@ -1,0 +1,47 @@
+.hero-button {
+    background: rgb(206, 79, 10);
+    
+  }
+
+  .hero-button:hover {
+    background: rgb(234, 97, 12);
+    
+  }
+  
+  .hero-button>i {
+      color: #0a2731;
+  }
+  
+  .spin-icons:hover i {
+      animation:spin 2s linear infinite;
+  }
+
+  .skills-button:hover {
+    scale: 1.1;
+  }
+  
+  .hero-button-cancel {
+    background: rgb(234, 12, 12);
+    box-shadow: 1px 1px 10px rgb(234, 19, 12);
+  }
+
+
+  
+  @keyframes spin {
+      from {
+          transform: rotate(0);
+        }
+      
+        to {
+          transform: rotate(360deg);
+        }
+      
+  }
+
+  @media (max-width: 970px) {
+    .table-wrapper {
+      flex-direction: column;
+      text-align: center;
+      gap: .5rem;
+    }
+  }

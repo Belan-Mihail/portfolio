@@ -1,0 +1,158 @@
+/* Contact */
+
+
+
+.text-part {
+    max-width: 30% !important;
+    
+  }
+
+.card_container_contact {
+
+  margin-bottom: 4rem;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-part-wrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+  
+  .contact-text {
+    font-size: 1.5rem;
+  }
+  
+  .contact-text-live {
+    font-size: 2.5rem;
+  }
+  
+  .contact-text-live:hover {
+    color: orangered;
+  }
+  
+  .form-part {
+    position: relative;
+    
+  }
+  
+  .svgContainer, .svgContaineraqua {
+    position: absolute;
+    margin: auto;
+    
+  }
+  
+  
+   .svgContainer path {
+    stroke: orangered;
+  }
+  
+  .svgContaineraqua path{
+    stroke: rgb(0, 255, 166);
+  }
+  
+  .form {
+    width: 30rem;
+    z-index: 20;
+  }
+  
+  .form>input {
+    border-top: 3px solid #03384a;
+    border-bottom: 3px solid #03384a;
+    color: #03384a;
+  }
+  
+  
+  
+  textarea:focus, input:focus {
+    outline: none;
+    border: 3px solid #0a2731;
+    box-shadow: 1px 1px 10px rgb(0, 255, 166);
+    border-radius:0;
+  }
+  textarea:focus:hover, input:focus:hover {
+    outline: none;
+    border: 3px solid #0a2731;
+    box-shadow: 1px 1px 10px rgb(0, 255, 166);
+    border-radius:0;
+  }
+  
+  .form>textarea {
+    border-top: 3px solid #03384a;
+    border-bottom: 3px solid #03384a;
+    color: #03384a;
+  }
+  
+  .front {
+    z-index: 20;
+  }
+
+  
+  
+  @media (max-width: 1024px) {
+    .feedback-section {
+      flex-direction: column;
+      align-items: center;
+    }  
+    .card_container_contact {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .form {
+      width: 25rem;
+    }  
+    .contact-text {
+      font-size: 1rem;
+    }
+    .contact-text-live {
+      font-size: 1.5rem;
+    }
+
+    .text-part-wrapper {
+      align-items: center;
+      text-align: center;
+    }
+
+    .form-part {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .svgContaineraqua > svg {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 15rem;
+    }
+
+    .svgContainer > svg {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 15rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .form {
+      width: 20rem;
+    }  
+
+  }
+
+  @media (max-width: 420px) {
+    .form {
+      width: 15rem;
+    }  
+
+  }

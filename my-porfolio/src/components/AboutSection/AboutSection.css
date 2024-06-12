@@ -1,0 +1,138 @@
+/* general styles for all pages */
+
+.content-wrapper-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-description {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.icons {
+  display: flex;
+  margin: 10px 30px;
+  padding: 40px;
+  justify-content: center;
+  gap: 70px;
+}
+
+/* Who I Was */
+
+.sub-content {
+  color: #dddd6d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 120px;
+  height: 100%;
+}
+
+.statistic-title {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 1.2rem;
+  background: #4c8582;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 10px #1a7492;
+  border-radius: 8px;
+}
+
+/* My Way Page */
+
+.table-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.table-wrapper {
+  display: flex;
+  padding: 1rem;
+  margin: 0 2rem;
+  color: #dddd6d;
+  gap: 2rem;
+  align-items: center;
+}
+
+.left-col {
+  flex: 1;
+}
+
+.right-col {
+  flex: 4;
+}
+
+.softskills-wrapper {
+  background: #4c8582;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 10px #1a7492;
+  border-radius: 8px;
+  max-width: fit-content;
+  padding: 0 1rem;
+}
+
+@media (max-width: 970px) {
+  .table-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .left-col {
+    flex: initial;
+  }
+
+  .right-col {
+    flex: initial;
+  }
+
+  .softskills-wrapper {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-row {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .content-col {
+    align-items: center;
+    
+  }
+
+  .subtitle {
+    max-width: max-content;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    gap: 2rem;
+    padding: 20px;
+  }
+}
+
