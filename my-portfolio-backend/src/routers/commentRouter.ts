@@ -45,6 +45,7 @@ commentRouter.put(
   asyncHandler(async (req: Request, res: Response) => {
     const comment = await CommentModel.findOne({ _id: req.params.id })
     const id = req.params.id
+    console.log(id)
     const currentUser = await UserModel.findOne({_id: req.user._id})
     const content = req.body.content
     if (currentUser?.name === comment?.user) {
@@ -65,9 +66,10 @@ commentRouter.delete(
   asyncHandler(async (req: Request, res: Response) => {
     
     const comment = await CommentModel.findOne({ _id: req.params.id })
+    const id = req.params.id
     const currentUser = await UserModel.findOne({_id: req.user._id})
     if (currentUser?.isAdmin || currentUser?.name === comment?.user) {
-      await CommentModel.deleteOne(comment);
+      await CommentModel.deleteOne({ _id: Object(id) });
       res
         .status(200)
         .json({ message: "Comment deleted" });
