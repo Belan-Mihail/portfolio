@@ -1,6 +1,6 @@
 /node_modules
 /build
-/data
+/src/data/UserData.ts
 .env
 
 # System Files
