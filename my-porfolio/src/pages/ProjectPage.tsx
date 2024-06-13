@@ -107,7 +107,7 @@ const ProjectPage = () => {
       });
       setContent("");
       setWillEdit(false)
-      toast.success("Wow!! It was easy...");
+      toast.success("Wow!!! It was easy...");
     } catch (err) {
       toast.error(getError(err as ApiError));
     }
