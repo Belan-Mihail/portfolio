@@ -181,7 +181,7 @@ const ProjectPage = () => {
                     <img src={selectedImageNumber === 0 ? portfoliodata!.images[slideNumber[0]] : selectedImageNumber === 1 ? portfoliodata!.images[slideNumber[1]] : selectedImageNumber === 2 ? portfoliodata!.images[slideNumber[2]] : portfoliodata!.images[slideNumber[3]]} alt="" />
                   </div>
                   <div
-                className="w-12 absolute top-[50vh] right-12 bg-gray-800 rounded-full hover:bg-gray-900 arrow-icons-right"
+                className="w-12 absolute top-[50vh] right-8 bg-gray-800 rounded-full hover:bg-gray-900 arrow-icons-right"
                 onClick={prevSlide}
               >
                 <img src={Arrow} alt="ArrowLeft" className="rotate-180 arrow"/>

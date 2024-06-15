@@ -124,8 +124,8 @@
   right: 2rem;
   
 
-  height: 95vh;
-  width: 95vw;
+  height: 95%;
+  width: 95%;
   
 }
 
@@ -133,7 +133,7 @@
   width: 100%;
   height: 95%;
   z-index: 200;
-  object-fit: contain;
+
 }
 
 .close-icon {
@@ -200,44 +200,20 @@
 
 }
 
-@media (max-width: 1120px) {
+
+
+@media (max-width: 850px) {
+  
+
   .image-container {
-    height: 95vh;
-    width: 95vw;
-    
-  }
-  
-  .image-container > img {
-    width: 100%;
-    height: 75%;
-    z-index: 200;
-    object-fit: unset;
-    margin-top: 10%;
-  }
-}
-
-@media (max-width: 990px) {
-  
-
-  .image-container > img {
-    width: 100%;
     height: 90%;
-    z-index: 200;
-    object-fit: contain;
-    
+    width: 90%;
   }
-}
 
-@media (max-width: 880px) {
-  
-
-  .image-container > img {
-    width: 100%;
-    height: 85%;
-    z-index: 200;
-    object-fit: contain;
-    padding-right: 4%;
+  .arrow-icons-right {
+    right: 8%;
   }
+
 }
 
 @media (max-width: 700px) {
@@ -262,20 +238,17 @@
   .card-tech {
     width: 400px;
   }
-}
 
-@media (max-width: 650px) {
-  
+  .arrow-icons-right {
+    width: 30px;
+  }
 
-  .image-container > img {
-    width: 100%;
-    height: 50%;
-    z-index: 200;
-    object-fit: fill;
-    padding-right: 6%;
-    margin-top: 50%;
+  .arrow-icons-left {
+    width: 30px;
   }
 }
+
+
 
 @media (max-width: 590px) {
 
@@ -290,22 +263,12 @@
 
   .image-container > img {
     width: 100%;
-    height: 50%;
+    height: 70%;
+    object-position: center;
+    margin-top: 20%;
 
-    object-fit: unset;
-    padding-right: 10%;
-    margin-top: 50%;
   }
 
-  .arrow-icons-right {
-    top: 80%;
-    right: 35%;
-  }
-
-  .arrow-icons-left {
-    top: 80%;
-    left: 35%;
-  }
 }
 
 @media (max-width: 460px) {
@@ -321,21 +284,16 @@
   .comment-wrapper {
     width: 270px;
   }
+  
+}
 
+@media (max-width: 420px) {
   .image-container > img {
-    width: 100%;
-    height: 30%;
-    margin-top: 50%;
-  }
+    width: 95%;
+    height: 70%;
+    object-position: center;
+    margin-top: 20%;
 
-  .arrow-icons-right {
-    top: 55%;
-    right: 35%;
-  }
-
-  .arrow-icons-left {
-    top: 55%;
-    left: 35%;
   }
   
 }
